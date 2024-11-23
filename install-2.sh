@@ -4,7 +4,7 @@ main() {
     clear
     echo -e "Welcome to the MacSploit Experience!"
     echo -e "Install Script Version 2.6"
-
+else
             echo -ne "\rEnter License Key (Press Enter to Continue as Free Trial): "
             read input_key
             
