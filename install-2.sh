@@ -4,22 +4,7 @@ main() {
     clear
     echo -e "Welcome to the MacSploit Experience!"
     echo -e "Install Script Version 2.6"
-else
-            echo -ne "\rEnter License Key (Press Enter to Continue as Free Trial): "
-            read input_key
-            
-            if [ "$input_key" != '' ]
-            then
-                echo -n "Contacting Secure Api... "
-                
-                local resp=$(curl -s "https://git.raptor.fun/api/sellix?key=$input_key&hwid=$user_hwid")
-                echo -e "Done.\n$resp"
-            fi
-        else
-            echo -e " Done.\nWhitelist Status Verified."
-        fi
-    fi
-
+    
     echo -e "Downloading Latest Roblox..."
     [ -f ./RobloxPlayer.zip ] && rm ./RobloxPlayer.zip
     local robloxVersionInfo=$(curl -s "https://clientsettingscdn.roblox.com/v2/client-version/MacPlayer")
